@@ -39,7 +39,7 @@ public class Runner {
             legalCol = false;
             while(!legalCol && !legalRow){
                 //get move from method
-                int[] cMove = c.determineMove();
+                int[] cMove = c.determineMove(b);
                 //make move the one on bottom
                 moveCol = cMove[1];
                 for(int i = 0; i < 8; i++){

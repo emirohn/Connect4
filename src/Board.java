@@ -60,7 +60,7 @@ public class Board {
 
                 //Chscks diagonally, down from left to right
                 if(col<=4 && row>=3){
-                    if((board[row][col].equals(token)) && (board[row - 1][col - 1].equals(token)) && (board[row - 2][col - 2].equals(token)) && (board[row - 3][col - 3].equals(token))){
+                    if((board[row][col].equals(token)) && (board[row - 1][col + 1].equals(token)) && (board[row - 2][col + 2].equals(token)) && (board[row - 3][col + 3].equals(token))){
                         return true;
                     }
                 }
