@@ -10,6 +10,7 @@ public class Board {
         createNewBoard();
     }
 
+    //Creates new blank board
     public void createNewBoard(){
         for(int row = 0; row < r; row++){
             for(int col = 0; col < h; col++){
@@ -18,6 +19,7 @@ public class Board {
         }
     }
 
+    //Prints board
     public void printBoard(){
         for(int row = 0; row < r; row++){
             for(int col = 0; col < h; col++){
@@ -27,11 +29,12 @@ public class Board {
         }
     }
 
+    //Replaces blank spot with tile
     public void makeMove(int row, int column, String tile){
         board[row][column] = "  [ " + tile + " ]  ";
     }
 
-
+    //Checks to see if there is a win
     public boolean checkWin(String token) {
         for (int row = 0; row < 8; row++) {
             for (int col = 0; col < 8; col++) {
@@ -69,4 +72,3 @@ public class Board {
         return false;
     }
 }
-
